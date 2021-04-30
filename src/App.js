@@ -1,11 +1,30 @@
 import './App.css';
-
+import {Route, Switch} from "react-router-dom"
 import Main from "./pages/Main"
-
+import Continent from "./pages/Continent"
+import Country from "./pages/Country"
+import Passport from "./pages/Passport"
+import Nav from "./components/Nav"
 function App() {
   return (
     <div className="App">
-      <Main/>
+      <Nav/>
+        <Switch>
+          <Route exact path="/">
+            <Main/>
+          </Route>
+          <Route path="/continent">
+            <Continent/>
+          </Route>
+          {/* <Route path="/country/:name"
+            render={
+              (renderProps) => <Country {...routerProps}/>
+            }
+            /> */}
+          <Route path="/passport">
+            <Passport/>
+          </Route>
+        </Switch>
     </div>
   );
 }
