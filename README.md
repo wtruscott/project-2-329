@@ -1,70 +1,207 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**PROJECT NAME:** Pocket Globe
 
-## Available Scripts
+**PROJECT AUTHOR:** Will Truscott
 
-In the project directory, you can run:
+## Project Links
 
-### `npm start`
+-[Github](https://github.com/wtruscott/project-2-329)
+-[Deployed Site](https://confident-archimedes-fedab4.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Schedule
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Timeline | Complete
+|Day 4| MVP & Bug Fixes | Incomplete
+|Day 5| Final Touches | Inomplete
+|Day 6| Present | Incomplete
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Description
 
-### `npm run build`
+I want to make a reference app for travalers or those who are just curious about some simple data on other countries. Users can click on or search for any existing country and get a profile of that country things like its capital, it's currency, and main language spoken. There will also be a page in the app called My Passport, that a user can add any country too. The idea is that you add countries that you've been to. I might additionally make an almost identical page that has countries you want to go to.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+API returns quite a bit of data on each country. I'm mostly interested in Capital, currency, language, maybe the surrounding countries, and the flag url. I have already tested and successfully been able to retrieve this data based on country name.
 
-### `npm run eject`
+```js
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[
+  {
+    "name": "Malawi",
+    "topLevelDomain": [
+      ".mw"
+    ],
+    "alpha2Code": "MW",
+    "alpha3Code": "MWI",
+    "callingCodes": [
+      "265"
+    ],
+    "capital": "Lilongwe",
+    "altSpellings": [
+      "MW",
+      "Republic of Malawi"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 16832910,
+    "latlng": [
+      -13.5,
+      34.0
+    ],
+    "demonym": "Malawian",
+    "area": 118484.0,
+    "gini": 39.0,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "borders": [
+      "MOZ",
+      "TZA",
+      "ZMB"
+    ],
+    "nativeName": "Malawi",
+    "numericCode": "454",
+    "currencies": [
+      {
+        "code": "MWK",
+        "name": "Malawian kwacha",
+        "symbol": "MK"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      },
+      {
+        "iso639_1": "ny",
+        "iso639_2": "nya",
+        "name": "Chichewa",
+        "nativeName": "chiCheŵa"
+      }
+    ],
+    "translations": {
+      "de": "Malawi",
+      "es": "Malawi",
+      "fr": "Malawi",
+      "ja": "マラウイ",
+      "it": "Malawi",
+      "br": "Malawi",
+      "pt": "Malávi",
+      "nl": "Malawi",
+      "hr": "Malavi",
+      "fa": "مالاوی"
+    },
+    "flag": "https://restcountries.eu/data/mwi.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "AU",
+        "name": "African Union",
+        "otherAcronyms": [
+          
+        ],
+        "otherNames": [
+          "الاتحاد الأفريقي",
+          "Union africaine",
+          "União Africana",
+          "Unión Africana",
+          "Umoja wa Afrika"
+        ]
+      }
+    ],
+    "cioc": "MAW"
+  }
+]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Wireframes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Mobile Display](https://i.imgur.com/o3I0Ogl.jpg)
+- [Tablet Display](https://i.imgur.com/BD1O2r3.jpg)
+- [Desktop Display](https://i.imgur.com/j411T1i.jpg)
 
-## Learn More
+## Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Architecture](https://i.imgur.com/FvwpT9S.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Time/Priority Matrix 
 
-### Code Splitting
+[Time Priority Matrix](https://i.imgur.com/tIN17CO.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Total is 28 hours
 
-### Analyzing the Bundle Size
+### MVP/PostMVP - 5min
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-### Making a Progressive Web App
+#### MVP (examples)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Project Deployment
+- General layout, linking all pages together through React
+- Set up functioning call to api
+- Rendering the data
+- Creating and setting state based off returns from api calls
+- Creating and setting state based off of user interaction with project
+- Creating a functioning Nav Bar
+- Basic CSS and layout
+- Simple responsive design
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### PostMVP 
 
-### Deployment
+- More complex Responsive design
+- Nav is Hamburger in Mobile
+- Rendering little flags for each country when they are in a list
+- Searching for a country with a form
+- Extra CSS styling 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Functional Component
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### MVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Project Deployment | H | .5hr | .5hr |
+| Linking/ Layout | H | 2hrs | ?? |
+| Api Call | H | 3hrs | ?? |  
+| Rendering the Data| H | 3hrs| ?? | 
+| Creating and setting State (Api Data) | H | 2hrs | ??|
+| Creating and setting State (local Data) | H | 4hrs| ?? | 
+| Create Nav Bar using Flex-Box| M | 1hr | ?? |
+| Adding Basic CSS | H | 4hrs | ?? |
+| Responsive Mobile First Design| M | 3hrs| ?? | 
+| Total | H | 22hrs| ?? |
+
+#### PostMVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Increase Complexity of Responsive Design| L | 2hrs | ?? |
+| Nav-Burger | M | 1hr | ?? |
+| Little Flags Next to Each Countries Name | L | 3hrs | ?? |
+| Serch Form | H | 4hrs | ?? |
+| Bonus Styling | L | 4+hrs | ?? |
+| Total | M | 14hrs| ?? |
+
+## Additional Libraries
+
+## Code Snippet
+
+```
+
+
+```
+
+
+## Issues and Resolutions
+
+
