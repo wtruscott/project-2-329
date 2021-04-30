@@ -6,8 +6,8 @@
 
 ## Project Links
 
--[Github](https://github.com/wtruscott/project-2-329)
--[Deployed Site](https://confident-archimedes-fedab4.netlify.app/)
+- [Github](https://github.com/wtruscott/project-2-329)
+- [Deployed Site](https://confident-archimedes-fedab4.netlify.app/)
 
 ## Project Schedule
 
