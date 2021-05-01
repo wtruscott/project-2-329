@@ -28,7 +28,7 @@ const Country = (props) => {
         //     })
         // )
         <div>
-                <h1>{country.name}</h1>
+                <h1 onClick={() => props.handlePassport(country.name)}>{country.name}</h1>
                 <img className="flag" src={country.flag} alt='flag'/>
                 <h1>Capital: {country.capital}</h1>
                 <h1>Population: {country.population}</h1>

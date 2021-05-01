@@ -1,7 +1,19 @@
 import React from "react"
+import {Link} from 'react-router-dom'
 
 const Passport = (props) => {
-    return <h1>This is the Country component</h1>
+
+    const myList = props.visited.map((country, index)=> {
+        return (
+            <Link to={`/country/${country}`}>
+                <h2 key={index}>{country}</h2>
+            </Link> 
+        )
+    })
+
+    return (
+        myList
+    )
 }
 
 export default Passport
