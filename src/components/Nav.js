@@ -6,9 +6,6 @@ const Nav = (props) => {
       <Link to="/">
         <div>Home</div>
       </Link>
-      <Link to="/continent">
-        <div>Continent</div>
-      </Link>
       <Link to="/passport">
         <div>My Passport</div>
       </Link>

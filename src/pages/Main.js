@@ -1,37 +1,33 @@
-import {useState, useEffect} from "react";
+import React from "react";
+import {Link} from 'react-router-dom'
 
 const Main = (props) => {
 
 // const apiKey = "c20caee15691546a29091e85665c7255"
 
 // const symbol = props.match.params.symbol
-const url = `https://restcountries.eu/rest/v2/name/mexico`
 
-const [country, setCountry] = useState(null)
+const continents = [
+    {name: "Africa", symbol: "africa"},
+    {name: "Asia", symbol: "asia"},
+    {name: "Australia", symbol: "oceania"},
+    {name: "Europe", symbol: "europe"},
+    {name: "North America", symbol: "americas"},
+    {name: "South America", symbol: "americas"}
+]
 
-const getCountry= async () => {
-    const response = await fetch(url)
-    const data = await response.json()
-    setCountry(data[0])
-}
-
-useEffect(() => {getCountry()}, [])
-
-const loaded = () => {
     return (
         <div>
-            <h1>Name: {country.name}</h1>
-            <h1>Capital: {country.capital}</h1>
+            {continents.map((continent)=> {
+                const {name, symbol} = continent;
+                return (
+                    <Link to={`/continent/${symbol}`}>
+                        <h2>{name}</h2>
+                    </Link>
+                )
+            })}
         </div>
     )
-}
-
-const loading = () => {
-    return <h1> Loading ...</h1>
-}
-
-return country? loaded() : loading()
-
 
 };
 

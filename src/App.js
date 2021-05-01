@@ -13,14 +13,17 @@ function App() {
           <Route exact path="/">
             <Main/>
           </Route>
-          <Route path="/continent">
-            <Continent/>
-          </Route>
-          {/* <Route path="/country/:name"
+          <Route path="/continent/:symbol"
             render={
-              (renderProps) => <Country {...routerProps}/>
+              (routerProps)=> <Continent {...routerProps}/>
+
             }
-            /> */}
+            />
+          <Route path="/country/:name"
+            render={
+              (routerProps) => <Country {...routerProps}/>
+            }
+            />
           <Route path="/passport">
             <Passport/>
           </Route>
