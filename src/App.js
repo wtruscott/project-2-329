@@ -7,7 +7,6 @@ import Country from "./pages/Country"
 import Passport from "./pages/Passport"
 import Future from "./pages/FutureDestinations"
 import Nav from "./components/Nav"
-import Jumbotron from "./components/Jumbotron"
 function App() {
 
 const [passport, setPassport] = useState([])
@@ -28,8 +27,8 @@ const handleFuture = (country) => {
 
   return (
     <div className="App">
+      
       <Nav/>
-      <Jumbotron/>
         <Switch>
           <Route exact path="/">
             <Main/>

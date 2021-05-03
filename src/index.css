@@ -1,5 +1,5 @@
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 body {
@@ -19,49 +19,57 @@ code {
 .nav {
   display: flex;
   justify-content: space-around;
-  background-color: #e6cba4;
-  color: rgb(46, 205, 211);
   padding: 15px;
   font-size: 2em;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .7);
 }
 .nav a {
-  color: rgb(45, 214, 200);
+  color: white;
   text-decoration: none;
 }
 
 .continents {
 display: grid;
 grid-template-columns: 1fr 1fr;
+position: absolute;
+left: 0px;
+right: 0px;
+bottom: 50px;
 }
 
-.Africa {
-  border: 3px solid rgb(255, 217, 0);
-  color: black;
+.continent {
+  color: white;
+  background-color: rgba(0, 0, 0, .7);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.Asia {
-  border: 3px solid rgb(162, 55, 233);
-  color: black;
+#Africa {
+  color: white;
 }
 
-.Australia {
-  border: 3px solid rgb(54, 136, 230);
-  color: black;
+#Asia {
+  color: white;
 }
 
-.Europe {
-  border: 3px solid rgb(255, 136, 0);
-  color: black;
+#Australia {
+  color: white;
 }
 
-.North {
-  border: 3px solid red;
-  color: black;
+#Europe {
+  color: white;
 }
 
-.South {
-  border: 3px solid rgb(17, 207, 17);
-  color: black;
+#North {
+  color: white;
+}
+
+#South {
+  color: white;
 }
 
 .flag {
@@ -73,10 +81,19 @@ grid-template-columns: 1fr 1fr;
 .jumbotron {
   height: 100%;
   width: 100%;
+  /* position: absolute;
+  z-index: -1; */
 }
 
 .jumbotron img{
   height:100%;
   width: 100%;
   object-fit: cover;
+  /* position: absolute;
+  z-index: -1; */
+
+}
+
+.mainContain {
+  position: relative;
 }

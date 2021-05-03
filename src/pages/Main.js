@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import Jumbotron from "../components/Jumbotron"
 
 const Main = (props) => {
 
@@ -17,16 +18,19 @@ const continents = [
 ]
 
     return (
-        <div className="continents">
-            {continents.map((continent)=> {
-                const {name, symbol} = continent;
-                return (
-                    <Link to={`/continent/${symbol}`}>
-                        <h2 className={name}>{name}</h2>
-                    </Link>
-                )
-            })}
-        </div>
+        <div className="mainContain">
+            <Jumbotron/>
+                <div className="continents">
+                    {continents.map((continent)=> {
+                        const {name, symbol} = continent;
+                        return (
+                            <Link to={`/continent/${symbol}`}>
+                                <h2 className="continent" id={name}>{name}</h2>
+                            </Link>
+                        )
+                    })}
+                </div>
+            </div>
     )
 
 };
