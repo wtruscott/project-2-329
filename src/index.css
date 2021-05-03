@@ -1,3 +1,7 @@
+* {
+  border: 1px solid black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,18 +19,64 @@ code {
 .nav {
   display: flex;
   justify-content: space-around;
-  background-color: #6532ca;
-  color: white;
+  background-color: #e6cba4;
+  color: rgb(46, 205, 211);
   padding: 15px;
   font-size: 2em;
 }
 .nav a {
-  color: white;
+  color: rgb(45, 214, 200);
   text-decoration: none;
+}
+
+.continents {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.Africa {
+  border: 3px solid rgb(255, 217, 0);
+  color: black;
+}
+
+.Asia {
+  border: 3px solid rgb(162, 55, 233);
+  color: black;
+}
+
+.Australia {
+  border: 3px solid rgb(54, 136, 230);
+  color: black;
+}
+
+.Europe {
+  border: 3px solid rgb(255, 136, 0);
+  color: black;
+}
+
+.North {
+  border: 3px solid red;
+  color: black;
+}
+
+.South {
+  border: 3px solid rgb(17, 207, 17);
+  color: black;
 }
 
 .flag {
   height: 300px;
   width: 500px;
   border: 1px solid black;
+}
+
+.jumbotron {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron img{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
 }

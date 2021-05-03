@@ -17,12 +17,12 @@ const continents = [
 ]
 
     return (
-        <div>
+        <div className="continents">
             {continents.map((continent)=> {
                 const {name, symbol} = continent;
                 return (
                     <Link to={`/continent/${symbol}`}>
-                        <h2>{name}</h2>
+                        <h2 className={name}>{name}</h2>
                     </Link>
                 )
             })}

@@ -9,6 +9,9 @@ const Nav = (props) => {
       <Link to="/passport">
         <div>My Passport</div>
       </Link>
+      <Link to="/futuredestinations">
+        <div>Future Destinations</div>
+      </Link>
     </div>
   );
 };

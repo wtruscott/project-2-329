@@ -28,10 +28,12 @@ const Country = (props) => {
         //     })
         // )
         <div>
-                <h1 onClick={() => props.handlePassport(country.name)}>{country.name}</h1>
+                <h1>{country.name}</h1>
                 <img className="flag" src={country.flag} alt='flag'/>
                 <h1>Capital: {country.capital}</h1>
                 <h1>Population: {country.population}</h1>
+                <button onClick={() => props.handlePassport(country.name)}>Add to Passport</button>
+                <button onClick={() => props.handleFuture(country.name)}>Add to Future Destinations</button>
                 </div>
             )
         }
