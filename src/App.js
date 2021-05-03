@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Route, Switch} from "react-router-dom"
 import Main from "./pages/Main"
 import Continent from "./pages/Continent"
@@ -7,6 +7,9 @@ import Country from "./pages/Country"
 import Passport from "./pages/Passport"
 import Future from "./pages/FutureDestinations"
 import Nav from "./components/Nav"
+import Test from "./components/Test"
+import Footer from "./components/Footer"
+
 function App() {
 
 const [passport, setPassport] = useState([])
@@ -27,7 +30,7 @@ const handleFuture = (country) => {
 
   return (
     <div className="App">
-      
+      <Test/>
       <Nav/>
         <Switch>
           <Route exact path="/">
@@ -55,6 +58,7 @@ const handleFuture = (country) => {
             wish={future}/>
           </Route>
         </Switch>
+      <Footer/>
     </div>
   );
 }

@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,32 +21,50 @@ code {
   display: flex;
   justify-content: space-around;
   padding: 15px;
-  font-size: 2em;
-  position: absolute;
+  font-size: 1em;
+  /* position: absolute;
   left: 0px;
   right: 0px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, .7);
+  z-index: 1; */
+  background-color: black;
 }
 .nav a {
   color: white;
   text-decoration: none;
 }
 
+.foot {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  font-size: 1em;
+  /* position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1; */
+  
+}
+
 .continents {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr;
+justify-items: left;
+align-content: center;
 position: absolute;
 left: 0px;
 right: 0px;
-bottom: 50px;
+top: 10px;
 }
 
 .continent {
   color: white;
   background-color: rgba(0, 0, 0, .7);
   margin-left: 20px;
-  margin-right: 20px;
+  width: 175px;
+  padding: 15px;
 }
 
 #Africa {
@@ -68,8 +87,8 @@ bottom: 50px;
   color: white;
 }
 
-#South {
-  color: white;
+#SouthAmerica {
+  color: red;
 }
 
 .flag {
@@ -79,8 +98,10 @@ bottom: 50px;
 }
 
 .jumbotron {
-  height: 100%;
-  width: 100%;
+  height: 700px;
+  width: auto;
+  margin: 0px;
+  overflow: hidden;
   /* position: absolute;
   z-index: -1; */
 }
