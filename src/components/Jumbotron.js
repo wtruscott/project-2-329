@@ -1,9 +1,13 @@
 import React from 'react'
+import imgArray from "../imgArray"
 
 const Jumbo = () => {
+
+const bigPicture = imgArray[Math.floor(Math.random() * imgArray.length)]
+
     return (
     <div className="jumbotron">
-        <img src="https://www.smartertravel.com/wp-content/uploads/2017/08/grand-canyon-sunset-1200x627.jpg" alt="Grand Canyon"/>
+        <img src={bigPicture.url} alt={bigPicture.alt}/>
     </div>
     )
 }
