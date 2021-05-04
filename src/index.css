@@ -28,7 +28,44 @@ code {
   z-index: 1; */
   background-color: black;
 }
-.nav a {
+
+  .navS {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 1em;
+    /* position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 1; */
+    background-color: red;
+  }
+
+    .navM {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      font-size: 1em;
+      /* position: absolute;
+      left: 0px;
+      right: 0px;
+      z-index: 1; */
+      background-color: yellow;
+    }
+
+    .navL {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      font-size: 1em;
+      /* position: absolute;
+      left: 0px;
+      right: 0px;
+      z-index: 1; */
+      background-color: blue;
+    }
+
+    .nav a {
   color: white;
   text-decoration: none;
 }
