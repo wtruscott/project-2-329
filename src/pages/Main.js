@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import Jumbotron from "../components/Jumbotron"
+import Continents from "../components/ContinentList"
 
 const Main = (props) => {
 
@@ -8,19 +9,20 @@ const Main = (props) => {
 
 // const symbol = props.match.params.symbol
 
-const continents = [
-    {name: "Africa", symbol: "africa"},
-    {name: "Asia", symbol: "asia"},
-    {name: "Australia", symbol: "oceania"},
-    {name: "Europe", symbol: "europe"},
-    {name: "North America", symbol: "americas"},
-    {name: "South America", symbol: "americas"}
-]
+// const continents = [
+//     {name: "Africa", symbol: "africa"},
+//     {name: "Asia", symbol: "asia"},
+//     {name: "Australia", symbol: "oceania"},
+//     {name: "Europe", symbol: "europe"},
+//     {name: "North America", symbol: "americas"},
+//     {name: "South America", symbol: "americas"}
+// ]
 
     return (
         <div className="mainContain">
             <Jumbotron/>
-                <div className="continents">
+            <Continents/>
+                {/* <div className="continents">
                     {continents.map((continent)=> {
                         const {name, symbol} = continent;
                         return (
@@ -29,7 +31,7 @@ const continents = [
                             </Link>
                         )
                     })}
-                </div>
+                </div> */}
             </div>
     )
 

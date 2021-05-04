@@ -11,7 +11,7 @@ const Nav = (props) => {
       }}>
         {matches => (
           <>
-            {matches.small && <div className="navS">
+             <div className={matches.small ? "navS" : matches.medium ? "navM" : "navL"}>
               <Link to="/">
                 <div>Home</div>
               </Link>
@@ -21,29 +21,7 @@ const Nav = (props) => {
               <Link to="/futuredestinations">
                 <div>Future Destinations</div>
               </Link>
-            </div>}
-            {matches.medium && <div className="navM">
-              <Link to="/">
-                <div>Home</div>
-              </Link>
-              <Link to="/passport">
-                <div>My Passport</div>
-              </Link>
-              <Link to="/futuredestinations">
-                <div>Future Destinations</div>
-              </Link>
-            </div>}
-            {matches.large && <div className="navL">
-              <Link to="/">
-                <div>Home</div>
-              </Link>
-              <Link to="/passport">
-                <div>My Passport</div>
-              </Link>
-              <Link to="/futuredestinations">
-                <div>Future Destinations</div>
-              </Link>
-            </div>}
+            </div>
           </>
         )}
           </Media>

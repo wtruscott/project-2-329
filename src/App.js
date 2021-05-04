@@ -30,7 +30,7 @@ const handleFuture = (country) => {
 
   return (
     <div className="App">
-      <Test/>
+      {/* <Test/> */}
       <Nav/>
         <Switch>
           <Route exact path="/">
