@@ -1,4 +1,6 @@
 import {useState, useEffect} from "react"
+import Media from "react-media"
+import continents from "../continents"
 
 const Country = (props) => {
     const name = props.match.params.name
@@ -18,25 +20,32 @@ const Country = (props) => {
     
     const loaded = () => {
         return (
-        //     countries.map((country, index) => {
-        //        return (
-        //                 <div>
-        //                     <h1>{country.name}</h1>
-        //                 </div>
-                    
-        //        )
-        //     })
-        // )
-        <div>
+            <div>
+            <Media queries={{
+              small: "(max-width: 599px)",
+              medium: "(min-width: 600px) and (max-width: 1199px)",
+              large: "(min-width: 1200px)"
+            }}>
+              {matches => (
+                <>
+            <div className={matches.small ? "countryS" : matches.medium ? "countryM" : "countryL"}>
                 <h1>{country.name}</h1>
                 <img className="flag" src={country.flag} alt='flag'/>
-                <h1>Capital: {country.capital}</h1>
-                <h1>Population: {country.population}</h1>
-                <button onClick={() => props.handlePassport(country.name)}>Add to Passport</button>
-                <button onClick={() => props.handleFuture(country.name)}>Add to Future Destinations</button>
+                <div className="infoCard">
+                    <h2>Capital: <span>{country.capital}</span></h2>
+                    <h2>Population: <span>{country.population}</span></h2>
+                    <h2>Currency: <span>{country.currencies[0].name}</span></h2>
+                    <h2>Languages: <span>{country.languages[0].name}</span></h2>
                 </div>
-            )
-        }
+                <button className="first" onClick={() => props.handlePassport(country.name)}>I've been here!</button>
+                <button className="second" onClick={() => props.handleFuture(country.name)}>I want to go here!</button>
+            </div>
+                </>
+        )}
+          </Media>
+    </div>
+        )
+    }
         
     
     const loading = () => {

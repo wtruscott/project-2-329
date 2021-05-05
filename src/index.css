@@ -164,10 +164,52 @@ top: 10px; */
   padding: 15px;
 }
 
-.flag {
-  height: 300px;
-  width: 500px;
-  border: 1px solid black;
+.countryS {
+  background-color: rgb(249, 241, 223);
+  min-height: 600px;
+  padding: 30px;
+}
+
+.countryS img {
+  height: auto;
+  width: 375px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.infoCard {
+  padding: 30px;
+  text-align: left;
+}
+
+.infoCard span {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
+.countryS button {
+  width: 200px;
+}
+
+.countryS .first{
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.countryS .second {
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  margin: 0 auto;
+  margin-top: 30px;
+  bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 .jumbotronS {
@@ -318,18 +360,34 @@ top: 10px; */
   color: white;
 }
 
-#americas {
+#SouthAmerica {
   display: grid;
   justify-content: center;
   background-color:rgb(159, 203, 242);
 }
 
-#americas h2 {
+#SouthAmerica h2 {
   background-color: rgb(56, 149, 230);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
-#americas a {
+#SouthAmerica a {
+  text-decoration: none;
+  color: white;
+}
+
+#NorthAmerica {
+  display: grid;
+  justify-content: center;
+  background-color:rgb(245, 149, 149);
+}
+
+#NorthAmerica h2 {
+  background-color: rgb(208, 27, 27);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+#NorthAmerica a {
   text-decoration: none;
   color: white;
 }

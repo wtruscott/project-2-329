@@ -16,14 +16,18 @@ const [passport, setPassport] = useState([])
 
 const handlePassport = (country) => {
   console.log([...passport, country])
-  setPassport([...passport, country])
+  if(passport.includes(country) !== true) {
+    setPassport([...passport, country])
+  }
 }
 
 const [future, setFuture] = useState([])
 
 const handleFuture = (country) => {
   console.log([...future, country])
-  setFuture([...future, country])
+  if(future.includes(country) !== true) {
+    setFuture([...future, country])
+  }
 }
 
 
