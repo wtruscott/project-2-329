@@ -110,7 +110,7 @@ top: 10px; */
   display: grid;
   justify-items: center;
   text-decoration: none;
-  border-top: 3px solid black;
+  /* border-top: 3px solid black; */
 }
 
 #continentsS {
@@ -164,32 +164,6 @@ top: 10px; */
   padding: 15px;
 }
 
-#Africa {
-
-}
-
-#Asia {
-  background-color: green;
-  border-radius: 30px;
-}
-
-#Australia {
-  color: white;
-  
-}
-
-#Europe {
-  color: white;
-}
-
-#North {
-  color: white;
-}
-
-#SouthAmerica {
-  color: red;
-}
-
 .flag {
   height: 300px;
   width: 500px;
@@ -201,6 +175,7 @@ top: 10px; */
   width: auto;
   margin: 0px;
   overflow: hidden;
+  border-bottom: 10px solid black;
   /* position: absolute;
   z-index: -1; */
 }
@@ -219,6 +194,7 @@ top: 10px; */
   width: auto;
   margin: 0px;
   overflow: hidden;
+  border-bottom: 15px solid black;
   /* position: absolute;
   z-index: -1; */
 }
@@ -237,6 +213,7 @@ top: 10px; */
   width: 100%;
   margin: 0px;
   overflow: hidden;
+  border-bottom: 20px solid black;
   /* position: absolute;
   z-index: -1; */
 }
@@ -252,4 +229,102 @@ top: 10px; */
 
 .mainContain {
   position: relative;
+}
+
+.countryListS h2 {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: .7em;
+}
+
+.countryList a {
+  font-size: 1em;
+}
+
+.countryListM h2, .countryListL h2{
+  width: 590px;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.countryListL {
+
+}
+
+#oceania {
+  display: grid;
+  justify-content: center;
+  background-color:rgb(245, 167, 98);
+}
+
+#oceania h2 {
+  background-color: rgb(245, 132, 33); 
+}
+
+#oceania a {
+  text-decoration: none;
+  color: white;
+}
+
+#africa {
+  display: grid;
+  justify-content: center;
+  background-color:rgb(247, 215, 30);
+}
+
+#africa h2 {
+  background-color: rgb(249, 186, 51);
+}
+
+#africa a {
+  text-decoration: none;
+  color: black;
+}
+
+#asia {
+  display: grid;
+  justify-content: center;
+  background-color:rgb(162, 220, 146);
+}
+
+#asia h2 {
+  background-color: rgb(33, 131, 33);
+}
+
+#asia a {
+  text-decoration: none;
+  color: white;
+}
+
+#europe {
+  display: grid;
+  justify-items: center;
+  background-color:rgb(211, 189, 247);
+}
+
+#europe h2 {
+  background-color: rgb(154, 102, 237);
+}
+
+#europe a {
+  text-decoration: none;
+  color: white;
+}
+
+#americas {
+  display: grid;
+  justify-content: center;
+  background-color:rgb(159, 203, 242);
+}
+
+#americas h2 {
+  background-color: rgb(56, 149, 230);
+}
+
+#americas a {
+  text-decoration: none;
+  color: white;
 }

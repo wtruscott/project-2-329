@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {Link} from 'react-router-dom'
+import Media from "react-media"
 
 const Continent = (props) => {
-
 
     const symbol = props.match.params.symbol
     const url = `https://restcountries.eu/rest/v2/region/${symbol}`
@@ -43,8 +43,21 @@ const Continent = (props) => {
         return <h1> Loading ...</h1>
     }
     
-    return countries? loaded() : loading()
-    
+    return (
+       countries?  <div>
+       <Media queries={{
+         small: "(max-width: 599px)",
+         medium: "(min-width: 600px) and (max-width: 1199px)",
+         large: "(min-width: 1200px)"
+       }}>
+         {matches => (
+           <><div id={symbol} className={matches.small ? "countryListS" : matches.medium ? "countryListM" : "countryListL"}>{loaded()}</div> 
+          </>
+        )}
+          </Media>
+    </div>
+        : loading()
+    )
 }
 
 export default Continent
