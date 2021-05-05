@@ -262,6 +262,7 @@ top: 10px; */
 
 #oceania h2 {
   background-color: rgb(245, 132, 33); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #oceania a {
@@ -277,6 +278,7 @@ top: 10px; */
 
 #africa h2 {
   background-color: rgb(249, 186, 51);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #africa a {
@@ -292,6 +294,7 @@ top: 10px; */
 
 #asia h2 {
   background-color: rgb(33, 131, 33);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #asia a {
@@ -307,6 +310,7 @@ top: 10px; */
 
 #europe h2 {
   background-color: rgb(154, 102, 237);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #europe a {
@@ -322,6 +326,7 @@ top: 10px; */
 
 #americas h2 {
   background-color: rgb(56, 149, 230);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #americas a {

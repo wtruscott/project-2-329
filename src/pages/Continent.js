@@ -5,7 +5,9 @@ import Media from "react-media"
 const Continent = (props) => {
 
     const symbol = props.match.params.symbol
+    const subregion = "South%20America"
     const url = `https://restcountries.eu/rest/v2/region/${symbol}`
+    const url2 = `https://restcountries.eu/rest/v2/subregion/${subregion}`
 
     const [countries, setCountries] = useState(null)
     
@@ -31,12 +33,18 @@ const Continent = (props) => {
         //     })
         // )
         countries.map((country, index)=> {
+            if(country.region==="Americas" && country.subregion===subregion) {
+                <Link to={`/country/${country.name}`}>
+                    <h2>{country.name}</h2>
+                </Link>
+            } else {
             return (
                 <Link to={`/country/${country.name}`}>
                     <h2>{country.name}</h2>
                 </Link>
             )
         }
+    }
         ))}
     
     const loading = () => {

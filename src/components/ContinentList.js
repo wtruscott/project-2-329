@@ -26,7 +26,7 @@ const Continents = () => {
                     {continents.map((continent)=> {
                         const {name, symbol, image} = continent;
                         return (
-                            <Link to={`/continent/${symbol}?name=${name}`}>
+                            <Link to={`/continent/${symbol}`}>
                                 <img id={name} src={image} alt={name}/>
                                 <h2 className="continent">{name}</h2>
                             </Link>
