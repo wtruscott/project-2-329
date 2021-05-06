@@ -75,6 +75,16 @@ code {
   text-decoration: none;
 }
 
+.navM span {
+  color: white;
+  margin: none;
+}
+
+.navL span {
+  color: white;
+  margin: none;
+}
+
 .navL a {
   color: white;
   text-decoration: none;
@@ -382,7 +392,7 @@ top: 10px; */
 }
 
 .countryListS h2 {
-  width: 350px;
+  width: 315px;
   padding: 10px;
   border: 2px solid white;
   border-radius: 20px;
@@ -393,15 +403,19 @@ top: 10px; */
   font-size: 1em;
 }
 
-.countryListM h2, .countryListL h2{
+.countryListM h2 {
+  width: 500px;
+  padding: 15px;
+  border: 2.5px solid white;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.countryListL h2{
   width: 590px;
   padding: 20px;
   border: 3px solid white;
   border-radius: 30px;
-}
-
-.countryListL {
-
 }
 
 #oceania {
@@ -513,3 +527,139 @@ top: 10px; */
   text-decoration: none;
   color: white;
 }
+
+.wishListS {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(255, 140, 238);
+}
+
+.wishListS h2 {
+  background-color: rgb(215, 20, 192);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 315px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: .7em;
+}
+
+.wishListS a {
+  text-decoration: none;
+  color: white;
+} 
+
+.wishListM {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(255, 140, 238);
+}
+
+.wishListM h2{
+  background-color: rgb(215, 20, 192);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 500px;
+  padding: 15px;
+  border: 2.5px solid white;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.wishListM a {
+  text-decoration: none;
+  color: white;
+} 
+
+.wishListL {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(255, 140, 238);
+}
+
+.wishListL h2 {
+  background-color: rgb(215, 20, 192);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 590px;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.wishListL a {
+  text-decoration: none;
+  color: white;
+} 
+
+.passListS {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(40, 55, 225);;
+}
+
+.passListS h2 {
+  background-color: rgb(6, 11, 157);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 315px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: .7em;
+}
+
+.passListS a {
+  text-decoration: none;
+  color: white;
+} 
+
+.passListM {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(40, 55, 225);;
+}
+
+.passListM h2{
+  background-color: rgb(6, 11, 157);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 500px;
+  padding: 15px;
+  border: 2.5px solid white;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.passListM a {
+  text-decoration: none;
+  color: white;
+} 
+
+.passListL {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-content:flex-start;
+  background-color:rgb(40, 55, 225);;
+}
+
+.passListL h2 {
+  background-color: rgb(6, 11, 157);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 590px;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.passListL a {
+  text-decoration: none;
+  color: white;
+} 

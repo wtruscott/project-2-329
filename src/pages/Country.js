@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react"
 import Media from "react-media"
 import continents from "../continents"
+import ContNav from "../components/ContNav"
 
 const Country = (props) => {
     const name = props.match.params.name
@@ -21,6 +22,7 @@ const Country = (props) => {
     const loaded = () => {
         return (
             <div>
+                <ContNav/>
             <Media queries={{
               small: "(max-width: 599px)",
               medium: "(min-width: 600px) and (max-width: 1199px)",

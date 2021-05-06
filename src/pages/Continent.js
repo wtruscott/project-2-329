@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from 'react-router-dom'
 import Media from "react-media"
 import continents from "../continents"
+import ContNav from "../components/ContNav"
 
 const Continent = (props) => {
 
@@ -114,7 +115,10 @@ const Continent = (props) => {
     }
     
     return (
-       countries?  <div>
+        
+       countries?  
+       <div>
+           <ContNav/>
        <Media queries={{
          small: "(max-width: 599px)",
          medium: "(min-width: 600px) and (max-width: 1199px)",
