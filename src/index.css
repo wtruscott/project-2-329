@@ -411,6 +411,10 @@ top: 10px; */
   font-size: 1em;
 }
 
+.countryListL h1{
+  color: black;
+}
+
 .countryListL h2{
   width: 590px;
   padding: 20px;

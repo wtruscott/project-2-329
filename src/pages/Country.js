@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 import Media from "react-media"
 import continents from "../continents"
 import ContNav from "../components/ContNav"
+import Exchange from "../components/CurrencyExchange"
 
 const Country = (props) => {
     const name = props.match.params.name
@@ -45,6 +46,7 @@ const Country = (props) => {
                 </>
         )}
           </Media>
+          <Exchange/>
     </div>
         )
     }

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Media from "react-media"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faGlobeAmericas} from "@fortawesome/free-solid-svg-icons"
 const Nav = (props) => {
   return (
     <div>
@@ -13,7 +15,7 @@ const Nav = (props) => {
           <>
              <div className={matches.small ? "navS" : matches.medium ? "navM" : "navL"}>
               <Link to="/">
-                <div>Home</div>
+                <div><FontAwesomeIcon icon={faGlobeAmericas}/> Home</div>
               </Link>
               <Link to="/passport">
                 <div>My Passport</div>

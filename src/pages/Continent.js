@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import Media from "react-media"
 import continents from "../continents"
 import ContNav from "../components/ContNav"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faGlobeAmericas} from "@fortawesome/free-solid-svg-icons"
 
 const Continent = (props) => {
 
