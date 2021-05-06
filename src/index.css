@@ -212,6 +212,114 @@ top: 10px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
+.countryM {
+  background-color: rgb(249, 241, 223);
+  height: 90vh;
+  padding: 30px;
+}
+
+.countryM h1 {
+  font-size: 3em;
+}
+
+.countryM img {
+  height: auto;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.infoCard {
+  padding: 30px;
+  text-align: left;
+}
+
+.infoCard span {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
+.countryM button {
+  width: 300px;
+  font-size: 1.4em;
+}
+
+.countryM .first{
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.countryM .second {
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  margin: 0 auto;
+  margin-top: 30px;
+  bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.countryL {
+  background-color: rgb(249, 241, 223);
+  min-height: 90vh;
+  padding: 30px;
+}
+
+.countryL h1 {
+  font-size: 3em;
+}
+
+.countryL img {
+  height: auto;
+  width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.infoCard {
+  padding: 30px;
+  text-align: left;
+  width:fit-content;
+  margin: 0 auto;
+}
+
+.infoCard h2 {
+  font-size: 2em;
+  width: fit-content;
+}
+
+.infoCard span {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
+.countryL button {
+  width: 400px;
+  font-size: 2em;
+}
+
+.countryL .first{
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.countryL .second {
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
 .jumbotronS {
   height: 500px;
   width: auto;
@@ -298,7 +406,7 @@ top: 10px; */
 
 #oceania {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color:rgb(245, 167, 98);
 }
 
@@ -314,7 +422,7 @@ top: 10px; */
 
 #africa {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color:rgb(247, 215, 30);
 }
 
@@ -330,7 +438,7 @@ top: 10px; */
 
 #asia {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color:rgb(162, 220, 146);
 }
 
@@ -355,6 +463,20 @@ top: 10px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 }
 
+.countryListS h2:hover {
+  font-size: 2em;
+}
+
+.countryListM h2:hover {
+  width: 650px;
+  font-size: 2.3em;
+}
+
+.countryListL h2:hover {
+  width: 900px;
+  font-size: 2.3em;
+}
+
 #europe a {
   text-decoration: none;
   color: white;
@@ -362,7 +484,7 @@ top: 10px; */
 
 #SouthAmerica {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color:rgb(159, 203, 242);
 }
 
@@ -378,7 +500,7 @@ top: 10px; */
 
 #NorthAmerica {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color:rgb(245, 149, 149);
 }
 
