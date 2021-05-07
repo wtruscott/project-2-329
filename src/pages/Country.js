@@ -23,8 +23,6 @@ const Country = (props) => {
     }
     
     useEffect(() => {getCountry()}, [])
-
-    console.log(country)
     
     const loaded = () => {
         return (

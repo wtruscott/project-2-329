@@ -19,7 +19,7 @@ const Continent = (props) => {
     const getCountries= async () => {
         if(symbol!=="NorthAmerica" && symbol !== "SouthAmerica" ) {
             url = `https://restcountries.eu/rest/v2/region/${symbol}`
-        } else if(symbol=="NorthAmerica" || symbol == "SouthAmerica" ) {
+        } else if(symbol==="NorthAmerica" || symbol === "SouthAmerica" ) {
             url = `https://restcountries.eu/rest/v2/region/americas`
         }
         const response = await fetch(url)
@@ -32,15 +32,15 @@ const Continent = (props) => {
     const [title, setTitle] = useState([])
 
     const getTitle= ()=> {
-        if(symbol=="oceania"){
+        if(symbol==="oceania"){
             setTitle(["Australia", faGlobeAsia])
-        } else if(symbol=="asia"){
+        } else if(symbol==="asia"){
             setTitle(["Asia", faGlobeAsia])
-        } else if(symbol=="africa"){
+        } else if(symbol==="africa"){
             setTitle(["Africa", faGlobeAfrica])
-        }else if(symbol=="europe"){
+        }else if(symbol==="europe"){
             setTitle(["Europe", faGlobeEurope])
-        }else if(symbol=="NorthAmerica"){
+        }else if(symbol==="NorthAmerica"){
             setTitle(["North America", faGlobeAmericas])
         }else{
             setTitle(["South America", faGlobeAmericas])
@@ -51,29 +51,29 @@ const Continent = (props) => {
    
     const loaded = () => {
     
-            if(symbol!="NorthAmerica" && symbol!= "SouthAmerica") {
+            if(symbol!=="NorthAmerica" && symbol!== "SouthAmerica") {
                 console.log(symbol)
                 return countries.map((country, index)=> (
                     <Link to={`/country/${country.name}`}>
-                        <h2>{country.name}</h2>
+                        <h2 key={index}>{country.name}</h2>
                     </Link>
                 ))
             } else {
                 console.log(symbol)
-                if(symbol=="NorthAmerica") {
+                if(symbol==="NorthAmerica") {
                     return countries.filter((country) => {
-                        return country.subregion == "Northern America" || country.subregion == "Central America" || country.subregion == "Caribbean"
+                        return country.subregion === "Northern America" || country.subregion === "Central America" || country.subregion === "Caribbean"
                     }).map((country, index)=> (
                         <Link to={`/country/${country.name}`}>
-                            <h2>{country.name}</h2>
+                            <h2 key={index}>{country.name}</h2>
                         </Link>
                     ))
-                } else if(symbol=="SouthAmerica") {
+                } else if(symbol==="SouthAmerica") {
                     return countries.filter((country) => {
-                        return country.subregion == "South America"
+                        return country.subregion === "South America"
                     }).map((country, index)=> (
                         <Link to={`/country/${country.name}`}>
-                            <h2>{country.name}</h2>
+                            <h2 key={index}>{country.name}</h2>
                         </Link>
                     ))
                 }

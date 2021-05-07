@@ -22,7 +22,7 @@ const CList = (props) => {
         countries.map((country, index)=> {
             return (
                 <Link to={`/country/${country.name}`}>
-                    <h2>{country.name}</h2>
+                    <h2 key={index}>{country.name}</h2>
                 </Link>
             )
         }
