@@ -661,7 +661,7 @@ align-content: center;
 }
 
 .wishListS {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
@@ -689,7 +689,7 @@ align-content: center;
 } 
 
 .wishListM {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
@@ -718,7 +718,7 @@ align-content: center;
 } 
 
 .wishListL {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
@@ -746,7 +746,7 @@ align-content: center;
 } 
 
 .passListS {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
@@ -774,7 +774,7 @@ align-content: center;
 } 
 
 .passListM {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
@@ -803,7 +803,7 @@ align-content: center;
 } 
 
 .passListL {
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
   justify-items: center;
   align-content:flex-start;
