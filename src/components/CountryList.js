@@ -19,15 +19,6 @@ const CList = (props) => {
     
     const loaded = () => {
         return (
-        //     countries.map((country, index) => {
-        //        return (
-        //                 <div>
-        //                     <h1>{country.name}</h1>
-        //                 </div>
-                    
-        //        )
-        //     })
-        // )
         countries.map((country, index)=> {
             return (
                 <Link to={`/country/${country.name}`}>

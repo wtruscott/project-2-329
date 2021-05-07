@@ -12,10 +12,7 @@ const money = props.money
     );
     const data = await response.json();
     setRate(data);
-    // console.log(data)
-    // console.log(money)
   };
-  console.log(rate)
   return (
       <div className="exchange">
           <h1>Exchange Rate:</h1>

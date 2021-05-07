@@ -13,9 +13,6 @@ const Continent = (props) => {
 
     const symbol = props.match.params.symbol
     let url = ""
-    // const subregion = "South America"
-    
-    // const url2 = `https://restcountries.eu/rest/v2/subregion/${subregion}`
    
     const [countries, setCountries] = useState(null)
     
@@ -51,37 +48,9 @@ const Continent = (props) => {
       }
 
       useEffect(() => {getTitle()}, [symbol])
-
-      console.log(title)
-
-    console.log(countries)
-    
+   
     const loaded = () => {
-        console.log(countries)
     
-        // return (
-            //IF countries[0].region !== "Americas"
-                //countries.map
-                    //return Links
-            //ELSE 
-                //IF countries[0].subregion == "South America"
-                    //countries.filter((country) => {
-                        //country.subregion == "South America"    
-                    //})
-                //IF countries[0].subregion == "Northern America"
-                    //countries.filter((country) => {
-                        //country.subregion == "South America"    
-                    //})
-                //IF countries[0].subregion == "Caribbean"
-                    //countries.filter((country) => {
-                        //country.subregion == "South America"    
-                    //})
-                //IF countries[0].subregion == "Central America"
-                    //countries.filter((country) => {
-                        //country.subregion == "South America"    
-                    //})
-       
-        
             if(symbol!="NorthAmerica" && symbol!= "SouthAmerica") {
                 console.log(symbol)
                 return countries.map((country, index)=> (
@@ -109,33 +78,7 @@ const Continent = (props) => {
                     ))
                 }
             }
-          
-
-
-//         countries.map((country, index)=> {
-//             if(country.region!=="Americas") {
-//             return (
-//                 <Link to={`/country/${country.name}`}>
-//                     <h2>{country.name}</h2>
-//                 </Link>
-//             )
-//         } else if(country.region==="Americas" && country.subregion!==subregion) {
-//                 return (
-//                 <Link to={`/country/${country.name}`}>
-//                     <h2>{country.name}, {country.subregion}</h2>
-//                 </Link>
-//                 )
-//             } else if(country.region==="Americas" && country.subregion===subregion) {
-//                 return (
-//                     <Link to={`/country/${country.name}`}>
-//                         <h2>{country.name}</h2>
-//                     </Link>
-//                     )
-//     }
-// }
-//         )
-        //  ) 
-    }
+        }
     
     const loading = () => {
         return <h1> Loading ...</h1>

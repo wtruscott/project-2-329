@@ -10,6 +10,11 @@ const images = [
     url: "https://media.npr.org/assets/img/2018/01/17/gettyimages-553198031-50_custom-f301526a5189d0e61574586d29e9fc1d652b745f.jpg"
     },
     {
+    alt: "Ampitheatre Valley",
+
+    url: "https://media.cntraveler.com/photos/58f8fff1aae67d6f485215dc/master/w_2048,h_1536,c_limit/amphitheatre-valley-drakensberg-south-africa-Alamy-HFA4ND.jpg"
+    },
+    {
     alt: "Kilimanjaro Giraffes",
     
     url: "https://www.pandotrip.com/wp-content/uploads/2018/07/Giraffes-with-Mount-Kilimanjaro-in-the-background.-Kilimanjaro-National-Park-Tanzania.jpg"
@@ -45,6 +50,16 @@ const images = [
     url: "https://www.snopes.com/tachyon/2018/07/great_wall_of_china.jpg?resize=865,452&crop_strategy=smart"
     },
     {
+    alt: "Taj Mahal",
+
+    url:"https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg"
+    },
+    {
+    alt: "Jeruselum",
+
+    url: "https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/jerusalem-ashdod-israel/overview/jerusalem-israel-tower-of-david.jpg?$1024x700$"
+    },
+    {
     alt: "Venice",
     
     url: "https://cdn1.matadornetwork.com/blogs/1/2011/05/italy-1200x815.jpg"
@@ -60,9 +75,9 @@ const images = [
     url: "https://www.gannett-cdn.com/presto/2019/12/18/USAT/566d2c9a-6fe3-4fe9-b460-137090015158-Croatia_-_Dubrovnik.jpg"
     },
     {
-    alt: "Versailles",
+    alt: "Eiffel",
     
-    url: "https://images.musement.com/cover/0002/15/venuehero-versailles1-jpg_header-114728.jpeg?q=50&fit=crop&auto=format&w=1024&h=400"
+    url: "https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateParis_Heroshutterstock_112137761.jpg"
     },
     {
     alt: "Sydney",
@@ -72,7 +87,7 @@ const images = [
     {
     alt: "New Zealand",
     
-    url: "https://thecommonwealth.org/sites/default/files/styles/press_release_large/public/images/hero/aoraki-new-zealand%20-%20article.jpg?itok=H8zb-aTP"
+    url: "https://www.newzealand.com/assets/Tourism-NZ/Fiordland/img-1536137761-110-7749-p-7ECF7092-95BD-FE18-6D4107E2E42D067E-2544003__aWxvdmVrZWxseQo_FocalPointCropWzQyNyw2NDAsNTAsNTAsODUsImpwZyIsNjUsMi41XQ.jpg"
     },
     {
     alt: "Barrier Reef",
@@ -127,7 +142,7 @@ const images = [
     {
     alt: "Yukon",
     
-    url: "https://www.thehotelguru.com/_images/18/3d/183d86047c04ba092ecb8997ecb4efb1/yukon-s1180x560.jpg"
+    url: "https://www.visaplace.com/wp-content/uploads/2020/01/fixedw_large_4x.jpg"
     },
     {
     alt: "Mexico",

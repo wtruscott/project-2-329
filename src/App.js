@@ -8,9 +8,7 @@ import Passport from "./pages/Passport"
 import Future from "./pages/FutureDestinations"
 import Nav from "./components/Nav"
 import Drop from "./components/DropNav"
-import Test from "./components/Test"
 import Footer from "./components/Footer"
-// import ContNav from "./components/ContNav"
 
 function App() {
 
@@ -44,12 +42,10 @@ const handleVisable = () => {
 
   return (
     <div className="App">
-      {/* <Test/> */}
       <Nav
       handleVisable={handleVisable}/>
       <Drop
       visable={visable}/>
-      {/* <ContNav/> */}
         <Switch>
           <Route exact path="/">
             <Main/>
