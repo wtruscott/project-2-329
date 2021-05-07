@@ -1,9 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faTwitter} from "@fortawesome/free-brands-svg-icons"
+import {faFacebookSquare} from "@fortawesome/free-brands-svg-icons"
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import {faInstagram} from "@fortawesome/free-brands-svg-icons"
 const Footer = (props) => {
   return (
     <div className="foot">
-    footer
+    <FontAwesomeIcon icon={faTwitter}/>
+    <FontAwesomeIcon icon={faFacebookSquare}/>
+    <FontAwesomeIcon icon={faLinkedin}/>
+    <FontAwesomeIcon icon={faInstagram}/>
     </div>
   );
 };

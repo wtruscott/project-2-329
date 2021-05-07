@@ -594,6 +594,16 @@ top: 10px; */
   position: relative;
 }
 
+.countryListS svg {
+  margin-bottom: 30px;
+  font-size: 3em;
+}
+
+.countryListS h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
 .countryListS h2 {
   width: 315px;
   padding: 10px;
@@ -606,6 +616,17 @@ top: 10px; */
   font-size: 1em;
 }
 
+.countryListM svg {
+  margin-bottom: 30px;
+  font-size: 6em;
+}
+
+.countryListM h1 {
+  font-size: 3em;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
 .countryListM h2 {
   width: 500px;
   padding: 15px;
@@ -614,8 +635,15 @@ top: 10px; */
   font-size: 1em;
 }
 
-.countryListL h1{
-  color: black;
+.countryListL svg {
+  margin-bottom: 50px;
+  font-size: 8em;
+}
+
+.countryListL h1 {
+  font-size: 5em;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
 }
 
 .countryListL h2{
@@ -771,6 +799,12 @@ top: 10px; */
   background-color:rgb(255, 140, 238);
 }
 
+.wishListM h1 {
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
 .wishListM h2{
   background-color: rgb(215, 20, 192);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
@@ -792,6 +826,12 @@ top: 10px; */
   justify-items: center;
   align-content:flex-start;
   background-color:rgb(255, 140, 238);
+}
+
+.wishListL h1 {
+  color: white;
+  font-size: 4em;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
 }
 
 .wishListL h2 {
@@ -844,6 +884,12 @@ top: 10px; */
   background-color:rgb(40, 55, 225);;
 }
 
+.passListM h1 {
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
 .passListM h2{
   background-color: rgb(6, 11, 157);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
@@ -867,6 +913,12 @@ top: 10px; */
   background-color:rgb(40, 55, 225);;
 }
 
+.passListL h1 {
+  color: white;
+  font-size: 4em;
+  text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px black;
+}
+
 .passListL h2 {
   background-color: rgb(6, 11, 157);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
@@ -880,3 +932,14 @@ top: 10px; */
   text-decoration: none;
   color: white;
 } 
+
+.foot {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.foot svg {
+  margin-left: 30px;
+  margin-right: 30px;
+}

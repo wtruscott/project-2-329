@@ -42,7 +42,7 @@ const images = [
     {
     alt: "Great Wall",
     
-    url: "https://www.visahq.com/images/visa_info/china-visa-application-requirements.jpg"
+    url: "https://www.snopes.com/tachyon/2018/07/great_wall_of_china.jpg?resize=865,452&crop_strategy=smart"
     },
     {
     alt: "Venice",
@@ -67,7 +67,7 @@ const images = [
     {
     alt: "Sydney",
     
-    url: "https://www.applelanguages.com/en/img/top/sydney.jpg"
+    url: "http://cdn.cnn.com/cnnnext/dam/assets/170905162130-sydney-opera-house.jpg"
     },
     {
     alt: "New Zealand",
@@ -77,7 +77,7 @@ const images = [
     {
     alt: "Barrier Reef",
     
-    url: "https://lh3.googleusercontent.com/proxy/-f4D0ds8-JGTdsmL6CIf5qBLPe_RCFkxgk6u5_HA1b21H6zutiZGXBdoM8p0P1U1zoJcAOBFlaOpmbaEmLmhk-J4UrtkQRYwShe48EgsnP7EBwFgOhd5dsCof4NIasJ7J9dw6Ky9KAoWHT4U-R2MGlaTx9MYS0BHg8piCzPLo4hqMgUpCSVk9WEUYTnf1LwbnIbuy9vgqlu7Jhzk"
+    url: "https://media.cntraveler.com/photos/5718f78980cf3e034f974595/16:9/w_2560%2Cc_limit/GettyImages-150968209.jpg"
     },
     {
     alt: "Rock",

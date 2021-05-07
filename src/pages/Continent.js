@@ -5,6 +5,9 @@ import continents from "../continents"
 import ContNav from "../components/ContNav"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faGlobeAmericas} from "@fortawesome/free-solid-svg-icons"
+import {faGlobeAsia} from "@fortawesome/free-solid-svg-icons"
+import {faGlobeEurope} from "@fortawesome/free-solid-svg-icons"
+import {faGlobeAfrica} from "@fortawesome/free-solid-svg-icons"
 
 const Continent = (props) => {
 
@@ -13,7 +16,7 @@ const Continent = (props) => {
     // const subregion = "South America"
     
     // const url2 = `https://restcountries.eu/rest/v2/subregion/${subregion}`
-
+   
     const [countries, setCountries] = useState(null)
     
     const getCountries= async () => {
@@ -29,7 +32,29 @@ const Continent = (props) => {
     
     useEffect(() => {getCountries()}, [symbol])
 
-    // console.log(countries)
+    const [title, setTitle] = useState([])
+
+    const getTitle= ()=> {
+        if(symbol=="oceania"){
+            setTitle(["Australia", faGlobeAsia])
+        } else if(symbol=="asia"){
+            setTitle(["Asia", faGlobeAsia])
+        } else if(symbol=="africa"){
+            setTitle(["Africa", faGlobeAfrica])
+        }else if(symbol=="europe"){
+            setTitle(["Europe", faGlobeEurope])
+        }else if(symbol=="NorthAmerica"){
+            setTitle(["North America", faGlobeAmericas])
+        }else{
+            setTitle(["South America", faGlobeAmericas])
+        }
+      }
+
+      useEffect(() => {getTitle()}, [symbol])
+
+      console.log(title)
+
+    console.log(countries)
     
     const loaded = () => {
         console.log(countries)
@@ -127,7 +152,8 @@ const Continent = (props) => {
          large: "(min-width: 1200px)"
        }}>
          {matches => (
-           <><div id={symbol} className={matches.small ? "countryListS" : matches.medium ? "countryListM" : "countryListL"}>{loaded()}</div> 
+           <>
+           <div id={symbol} className={matches.small ? "countryListS" : matches.medium ? "countryListM" : "countryListL"}><h1>{title[0]}</h1><FontAwesomeIcon icon={title[1]}/> {loaded()}</div> 
           </>
         )}
           </Media>
