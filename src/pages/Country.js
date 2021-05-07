@@ -3,6 +3,12 @@ import Media from "react-media"
 import continents from "../continents"
 import ContNav from "../components/ContNav"
 import Exchange from "../components/CurrencyExchange"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faCity} from "@fortawesome/free-solid-svg-icons"
+import {faComments} from "@fortawesome/free-solid-svg-icons"
+import {faCoins} from "@fortawesome/free-solid-svg-icons"
+import {faUsers} from "@fortawesome/free-solid-svg-icons"
+
 
 const Country = (props) => {
     const name = props.match.params.name
@@ -35,18 +41,21 @@ const Country = (props) => {
                 <h1>{country.name}</h1>
                 <img className="flag" src={country.flag} alt='flag'/>
                 <div className="infoCard">
-                    <h2>Capital: <span>{country.capital}</span></h2>
-                    <h2>Population: <span>{country.population}</span></h2>
-                    <h2>Currency: <span>{country.currencies[0].name}</span></h2>
-                    <h2>Languages: <span>{country.languages[0].name}</span></h2>
+                    <div><FontAwesomeIcon icon={faCity}/><h2>Capital: <br/><span>{country.capital}</span></h2></div>
+                    <div><FontAwesomeIcon icon={faUsers}/> <h2>Population: <br/><span>{country.population}</span></h2></div>
+                    <div><FontAwesomeIcon icon={faComments}/> <h2>Languages: <br/><span>{country.languages[0].name}</span></h2></div>
+                    <div><FontAwesomeIcon icon={faCoins}/> <h2>Currency: <br/><span>{country.currencies[0].name}</span></h2></div>
+                    <Exchange
+                    money={country.currencies[0].code}/>
                 </div>
+                
                 <button className="first" onClick={() => props.handlePassport(country.name)}>I've been here!</button>
                 <button className="second" onClick={() => props.handleFuture(country.name)}>I want to go here!</button>
             </div>
                 </>
         )}
           </Media>
-          <Exchange/>
+          
     </div>
         )
     }

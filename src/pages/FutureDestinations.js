@@ -2,6 +2,8 @@ import React from "react"
 import {Link} from 'react-router-dom'
 import Media from "react-media"
 import ContNav from "../components/ContNav"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faMapMarkedAlt} from "@fortawesome/free-solid-svg-icons"
 
 const Future = (props) => {
 
@@ -24,6 +26,7 @@ const Future = (props) => {
             {matches => (
                 <>
                     <div className={matches.small ? "wishListS" : matches.medium ? "wishListM" : "wishListL"}>
+                    <h1>Future Destinations <FontAwesomeIcon icon={faMapMarkedAlt}/></h1>
                         {wishList}
                     </div>
                 </>

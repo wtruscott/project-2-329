@@ -2,6 +2,8 @@ import React from "react"
 import {Link} from 'react-router-dom'
 import Media from "react-media"
 import ContNav from "../components/ContNav"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPlane} from "@fortawesome/free-solid-svg-icons"
 
 const Passport = (props) => {
 
@@ -24,6 +26,7 @@ const Passport = (props) => {
             {matches => (
                 <>
                     <div className={matches.small ? "passListS" : matches.medium ? "passListM" : "passListL"}>
+                        <h1>My Passport <FontAwesomeIcon icon={faPlane}/></h1>
                         {myList}
                     </div>
                 </>

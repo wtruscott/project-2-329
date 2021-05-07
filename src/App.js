@@ -7,6 +7,7 @@ import Country from "./pages/Country"
 import Passport from "./pages/Passport"
 import Future from "./pages/FutureDestinations"
 import Nav from "./components/Nav"
+import Drop from "./components/DropNav"
 import Test from "./components/Test"
 import Footer from "./components/Footer"
 // import ContNav from "./components/ContNav"
@@ -31,13 +32,23 @@ const handleFuture = (country) => {
   }
 }
 
+const [visable, setVisable] = useState(false)
 
-
+const handleVisable = () => {
+  if(visable===true){
+    setVisable(false)
+  } else {
+    setVisable(true)
+  }
+  }
 
   return (
     <div className="App">
       {/* <Test/> */}
-      <Nav/>
+      <Nav
+      handleVisable={handleVisable}/>
+      <Drop
+      visable={visable}/>
       {/* <ContNav/> */}
         <Switch>
           <Route exact path="/">

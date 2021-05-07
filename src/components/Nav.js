@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Media from "react-media"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faGlobeAmericas} from "@fortawesome/free-solid-svg-icons"
+import {faBars} from "@fortawesome/free-solid-svg-icons"
 const Nav = (props) => {
   return (
     <div>
@@ -23,6 +24,7 @@ const Nav = (props) => {
               <Link to="/futuredestinations">
                 <div>Future Destinations</div>
               </Link>
+              <div className="icon" onClick={() => props.handleVisable()}><FontAwesomeIcon icon={faBars}/></div>
             </div>
           </>
         )}
